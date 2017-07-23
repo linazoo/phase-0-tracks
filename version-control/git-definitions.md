@@ -1,4 +1,4 @@
-# Git Definitions by zoo
+# Git Definitions by Z00
 
 **Instructions: ** Define each of the following Git concepts.
 
