@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foodie Living</title>
+</head>
+<body>
+<form name="foods" action="success.html" method="post">
+  <fieldset>
+    <div>
+      <label>who are you?</label>
+      <input type="text" name="fullname">
+    </div>
+
+    <div>
+      <label>whats your email?</label>
+      <input type="email" name="email">
+    </div>
+
+    <div>
+      <label>identity check:</label>
+      <input type="password" name="password">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div>
+      <label>I like to eat...</label>
+      <input type="text" name="adv-name" placeholder="preference">
+    </div>
+
+    <div>
+      <label>are you...</label>
+      <select name="bike">
+        <option value="veggies">Vegetarian</option>
+        <option value="meats">Carnivore</option>
+        <option value="fexible">Flexitarian</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Since when</label>
+      <input type="date" name="date">
+    </div>
+
+    <div>
+      <input type="checkbox" name="cb-agree" value="agree">
+      I am prepared to eat!
+       <legend>Need to tell us about something else?</legend>
+    <p><textarea class="noscrollbars" onkeyup="autoGrow(this);"></textarea></p>
+    </div>
+  </fieldset>
+
+  <button type="submit">Save my food preferences</button>
+
+
+</form>
+
+</body>
+</html>
