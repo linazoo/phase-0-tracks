@@ -13,3 +13,11 @@ margin: 20px;
   font-size: .8em
 }
 
+#wildlife {
+  background-color: DodgerBlue;
+}
+
+#resume-title:hover {
+    color: DodgerBlue;
+    text-decoration: blink;
+}
