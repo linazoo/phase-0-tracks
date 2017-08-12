@@ -1,0 +1,21 @@
+# Release 0 write the algorithm for using an elevator
+
+#1. robot walks up to the elevator door (closed) and it pushes the button to call on the elevator
+
+#2. once elevator door opens walk into the elevator and look for number panel
+
+#3. pick whichever floor you want, the number shown represents the floor
+
+#4. elevator will take you to that floor and door will open
+
+#5. walk out of the elevator you have arrived!
+
+#Release 1: Find a Real-Life Algorithm
+
+#Watering plants steps
+
+# 1. check if the plant needs watering by touching the soil
+
+# 2. if the soil of the plant pot is dry. the plant needs water
+
+# 3. grab the water bottle and pour some water on the soil
