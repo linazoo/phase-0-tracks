@@ -7,7 +7,7 @@
 # "iNvEsTiGaTiOn".swapcase
 # => “InVeStIgAtIoN”
 
-# "zom".<???>
+# "zom".instert(1, "o")
 # => “zoom”
 
 # "enhance".center(20)
@@ -19,10 +19,11 @@
 # "the usual"
 # a = "the usual "
 # a << "suspects"
-#=> "the usual suspects"
+# => "the usual suspects"
 
 
-# " suspects".<???>
+# " suspects".insert(0, "the usual")
+# " suspects".rjust(18, "the usual")
 # => "the usual suspects"
 
 # "The case of the disappearing last letter".chop
@@ -39,5 +40,5 @@
 # (What is the significance of the number 122 in relation to the character z?)
 
 # str = "How many times does the letter 'a' appear in this string?"
-#string.scan(/a/).count
+# string.scan(/a/).count
 # => 4
