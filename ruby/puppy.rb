@@ -2,7 +2,7 @@
 Dogger Pupper
 
 CHARACTERISTICS ----------------
-leg count: varies
+leg count: 4
 cute: true
 fur: true
 Name: varies
