@@ -5,7 +5,7 @@ function countToTen() {
   }
 }
 
-countToTen();
+// countToTen();
 
 // backward
 function countToTen() {
@@ -14,7 +14,7 @@ function countToTen() {
   }
 }
 
-countToTen();
+// countToTen();
 
 
 //function takes a string as a parameter and reverses the string reverse("hello") => "olleh"
