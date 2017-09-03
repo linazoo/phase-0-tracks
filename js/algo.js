@@ -36,5 +36,34 @@ function sharedValue (object1, object2){
   return false
 }
 
-console.log(sharedValue({name: "Steven", age: 54}, {name: "Tamir", age: 54})); //  true
-console.log(sharedValue({animal: "Dog", legs: 4}, {animal: "Dog", legs: 3})); // true
+// console.log(sharedValue({name: "Steven", age: 54}, {name: "Tamir", age: 54}));
+// console.log(sharedValue({animal: "Dog", legs: 4}, {animal: "Dog", legs: 3}));
+
+
+
+function RandomTest (length) {
+  //length is how many words we want in our array
+  //should be min of 1 - 10 random letters
+  var words = []
+  for (var i = 0; i < length; i++){
+    // we want to create a random word between 1 - 10 characters long
+    var randomWordLength = Math.floor(Math.random() * 10) + 1 // returns word length
+    var randomWord = createRandomWord(randomWordLength) // returns random word
+    words.push(randomWord)
+    //put the random word in the array
+  }
+  return words;
+}
+
+function createRandomWord(num) {
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+  for (var i = 0; i < num; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
+// builds and returns an array of strings of the given lenght
+
+console.log(RandomTest(5));
