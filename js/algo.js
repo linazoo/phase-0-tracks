@@ -23,17 +23,18 @@
 // should return true if object1 and object2 have at least one of the same key values example: they have the same age
 
 function sharedValue (object1, object2){
-    for ( key in object1 ) {
-      var current_key = key
-      for (key in object2) {
-        if (current_key === key) {
-          if (object1[key] === object2[current_key]){
-            true
-          }
+  for ( key in object1 ) {
+    var current_key = key
+    for (key in object2) {
+      if (current_key === key) {
+        if (object1[key] === object2[current_key]){
+          return true
         }
       }
     }
+  }
+  return false
 }
 
-sharedValue({name: "Steven", age: 54}, {name: "Tamir", age: 54}); //  true
-// sharedValue({animal: "Dog", legs: 4}, {animal: "Dog", legs: 3}); // true
+console.log(sharedValue({name: "Steven", age: 54}, {name: "Tamir", age: 54})); //  true
+console.log(sharedValue({animal: "Dog", legs: 4}, {animal: "Dog", legs: 3})); // true
