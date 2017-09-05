@@ -1,0 +1,20 @@
+<--------RELEASE TWO-------->
+
+2.
+sqlite> SELECT * FROM reviews INNER JOIN users ON reviews.user_id = users.id INNER JOIN businesses ON reviews.business_id = businesses.id;
+
+1|4|Great chapel!|1|2|2|Mandy|Kaling|1|Grundy Hollow Wedding Chapel
+2|2|Long wait on the side of the road.|2|3|3|Angela|Jolie|2|Amir's Towing
+3|3|Drinks were so-so.|3|1|1|Bradford|Pitt|3|The Beagle Nightclub
+
+3.
+sqlite> SELECT users.firstName, users.lastName, businesses.name, reviews.stars, reviews.comment FROM reviews INNER JOIN users ON reviews.user_id = users.id INNER JOIN businesses ON reviews.business_id = businesses.id;
+
+Mandy|Kaling|Grundy Hollow Wedding Chapel|4|Great chapel!
+Angela|Jolie|Amir's Towing|2|Long wait on the side of the road.
+Bradford|Pitt|The Beagle Nightclub|3|Drinks were so-so.
+
+4.
+sqlite> SELECT users.firstName, users.lastName, businesses.name, reviews.stars, reviews.comment FROM reviews INNER JOIN users ON reviews.user_id = users.id INNER JOIN businesses ON reviews.business_id = businesses.id WHERE businesses.name = "Grundy Hollow Wedding Chapel";
+
+Mandy|Kaling|Grundy Hollow Wedding Chapel|
