@@ -1,0 +1,11 @@
+Test: each SQL query ran &  both the command and the output
+
+INSERT INTO recipes (name, ingredients, instructions, protein_id)
+
+-----------------------------------------------------------
+sqlite> SELECT * FROM recipes, protein WHERE protein_id = protein.id;
+
+1|Summer Vegetable Paella|1 cup carnaroli rice - 4oz sweet peppers - 6oz green beans - 2 cloves garlic - 1 lemon - 1 summer squash - 1 yellow onion|true|2|2|veggies
+2|Fennel-Spiced Steaks|2 steaks - 1 clove garlic - 1 russet potato - 6 oz green beans - 2 tbsps roasted almonds - 2 tbsps shaved parmesan cheese - 1 shallot - 1 tbsp white wine vinegar - 1 tbsp steak spice blend|false|4|4|meat
+3|Chicken with Brown Butter Rice|2 boneless skinless chicken breasts - 4oz cherry or charm tomatoes - 2 cloves garlic - 2 ears of corn - 2 tbsps butter - 1 shallot - 1 tbsp sherry vinegar|true|1|1|chicken
+sqlite>
