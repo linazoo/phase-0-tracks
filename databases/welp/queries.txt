@@ -18,3 +18,4 @@ Bradford|Pitt|The Beagle Nightclub|3|Drinks were so-so.
 sqlite> SELECT users.firstName, users.lastName, businesses.name, reviews.stars, reviews.comment FROM reviews INNER JOIN users ON reviews.user_id = users.id INNER JOIN businesses ON reviews.business_id = businesses.id WHERE businesses.name = "Grundy Hollow Wedding Chapel";
 
 Mandy|Kaling|Grundy Hollow Wedding Chapel|
+
