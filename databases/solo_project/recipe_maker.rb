@@ -43,7 +43,7 @@ if decision == 1
 else
   # puts "here are all the recipes:  "
   recipes = get_all_recipes(db)
-  puts "#{recipes}"
+  puts recipes
 end
 
 
