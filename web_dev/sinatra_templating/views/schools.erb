@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student School database system</title>
+</head>
+<body>
+  <h1>Student School database system</h1>
+  <p>Welcome to the Student School database system.</p>
+  <p>Click <a href="/campuses">here</a> to create add a new campus.</p>
+  <ul>
+    <% @students.each do |student| %>
+      <li><%= student['name'] %>, <%= student['campus'] %></li>
+    <% end %>
+  </ul>
+
+</body>
+</html>
