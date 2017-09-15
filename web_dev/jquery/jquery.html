@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</script>
+</head>
+<body>
+
+<h1> Welcome To The Fact Checking Game! </h1>
+<h2> Featuring statments made by your president Donald Trump </h2>
+<h3> Click on the buttons to see which of the following statments are true and which ones are false (according to www.politifact.com/)- but before you do that, see if you can guess! </h3>
+
+<p class="real">"Forty-three million Americans are on food stamps."</p>
+<p class="fake">"The media ... sort of made it sound like I had a feud with the intelligence community."</p>
+<p class="real">"We spend more per student than almost any other major country in the world."
+</p>
+<p class="fake">"We're pretty much at the 50 percent mark" on deportations of MS-13 gang members."</p>
+<p class="fake">"No administration has accomplished more in the first 90 days."</p>
+<p class="fake">"All pipelines that are coming into this country from now on has to be American steel."</p>
+<p class="real">"Jon Ossoff "doesn't even live in (his) district."</p>
+
+<button id="false">Click me to see all the LIES</button>
+<button id="true">Click me to see all the TRUTH</button>
+
+</body>
+</html>
+
+<script>
+$(document).ready(function(){
+    $("#false").click(function(){
+        $(".real").hide();
+        $(".fake").show();
+    });
+    $("#true").click(function(){
+        $(".fake").hide();
+        $(".real").show();
+    });
+});
+</script>
