@@ -37,6 +37,6 @@ get '/campuses' do
   end
 
 post '/schools' do
-  db.execute("INSERT INTO students (campus) VALUES (?)", params['campus'])
+  db.execute("INSERT INTO students (name, campus, age) VALUES (?, ?, ?)", "Johnny Rocket", params['campus'], 23)
   redirect '/students/schools'
 end
