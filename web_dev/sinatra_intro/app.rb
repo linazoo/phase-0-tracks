@@ -37,6 +37,24 @@ get '/students' do
   response
 end
 
+get '/contact' do
+  "The address is 139 South 4th St, Brooklyn, N.Y 11211"
+end
+
+get '/great_job' do
+  name = params[:name]
+  if name
+    "Great job, #{name}!"
+  else
+    "Great job, you!"
+  end
+end
+
+get '/:number_1/add/:number_2' do
+  total = params[:number_1].to_i + params[:number_2].to_i
+  "The result of the two numbers is: #{total}"
+end
+
 # write a GET route that retrieves
 # a particular student
 
